@@ -1,0 +1,317 @@
+article, aside, details, figcaption, figure, footer, header, menu, section,button
+	display: block
+
+*	
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+@import "mixin.styl"
+
+maincl = #7f7f7f
+cl2 = #cc2700
+cl3 = #0e0e0e
+cl4 = #1c1d1d
+cl5 = #dcdcdc
+op = 0.6
+
+mainff = Arial, Tahoma, Verdana, sans-serif
+ff = Glegoo, Georgia, "Times New Roman", serif
+
+html
+	height 100%
+
+.pager	
+	margin 0
+	height 100%
+	font 87.5%/1.78 Arial, Tahoma, Verdana, sans-serif   /* 14/16 */
+ 
+.wrapper
+	min-height 100%
+	display flex
+	flex-direction column
+	justify-content space-between
+	&__content
+		flex-grow 1
+			
+
+/***header***/
+
+.main-header
+	background #000
+
+.header
+	mainw()	
+	padding 25px 0
+	flex()
+	align-items center
+	&__small
+		color cl2
+		outline none
+		border none	
+		background transparent
+		cursor pointer
+		display none
+		font-size 2em
+	&__line
+		display block
+		background maincl
+		width 35px
+		height 2px
+		margin-bottom 8px	
+	&__link
+		display block
+.nav		
+	margin-right 25px
+	&__menu	  		
+		overflow hidden
+	&__item
+		float left
+		margin-left 15px	
+	&__link
+		text-decoration none
+		color maincl
+	&__link:hover
+		color cl2
+				
+/***thumb***/
+
+.main-thumb
+	background cl3
+	padding 1px 0
+	box-shadow 0 -5px 16px rgba(0,0,0,1) inset
+	
+.thumb
+	mainw()	
+	flex()
+	flex-wrap nowrap
+	padding 0 30px 40px 30px
+	min-height 100%
+	&__img
+		margin -50px -34px 0 0
+		max-width 100%
+		height 100%
+	&__left
+		margin 35px 0 	
+	&__title
+		font 2em/1.3 ff	
+		color #fff
+		letter-spacing -2.2px
+		margin-bottom 15px
+	&__text
+		color maincl
+		line-height 1.78
+		&_link
+			color cl2
+		&_link:hover
+			opacity op				
+	&__btn
+		border none
+		box-shadow -1px 1px 0 rgba(#eb8100 .5) inset
+		border-radius 5px
+		background linear-gradient(to top, #cc2800 0%, #e36100 100%)
+		color #fff
+		font 1.57em ff
+		padding 10px 29px
+		line-height 1
+		outline none
+		margin-top 27px
+		letter-spacing -2px
+	&__btn:hover
+		opacity op
+		cursor pointer	
+		
+/***content***/	
+
+.main-content
+	background cl4
+	
+.content
+	mainw()
+	padding 32px 30px 60px 10px
+	&__top
+		display flex
+	&__boxer
+		margin-left 20px
+		position relative
+	&__img
+		cursor pointer		
+		max-width 100%	
+		height auto		
+		border-radius 5px
+	&__img:hover
+		opacity op	
+	&__title	
+		font-size 2.14em 
+		font-weight bold
+		line-height 0.97
+		position absolute
+		bottom 49%
+		left 6%
+		text-shadow 1px 1px 0 #fff, -1px -1px 0 #fff, 
+                  -1px 1px 0 #fff, 1px -1px 0 #fff
+		&_clr1
+			color #d31216
+		&_clr2
+			color #6f7e04
+		&_clr3
+			color #678587									
+	&__btn
+		font 1.28em/1 ff
+		letter-spacing -2px
+		padding 6px 23px		
+		position absolute
+		bottom 20%
+		left 6%	
+		cursor pointer	
+		outline none		
+		border 3px solid #fff
+		border-radius 7px		
+		box-shadow 0 -1px 0 0 rgba(255,255,255,0.5) inset,  0 0 9px 0 rgba(0,0,0,0.75)	
+		background linear-gradient(to top, #cecece 0%, #fdfdfd 100%)		
+		&_clr1
+			color #d31216	
+		&_clr2
+			color #6f7e04
+		&_clr3
+			color #678587
+	&__btn:hover
+		opacity op				
+	&__box
+		flex()
+		flex-wrap nowrap
+		padding-top 36px
+		margin-left 20px
+	&__event
+		flex-basis 615px	
+	&__ttl
+		font 2.5em ff
+		line-height 0.78
+		color #fff
+		letter-spacing -2px	
+		margin 10px 0 0	
+		display block	
+		letter-spacing -3px		
+	&__item
+		border-bottom 1px dotted #3f4141
+		padding 30px 0
+		flex()
+		flex-wrap nowrap 
+		align-items flex-start
+	&__item:last-child
+		border-bottom none
+		padding 30px 0 0	
+	&__data
+		background cl5
+		border-radius 5px
+		text-align center
+		margin-right 20px		
+		&_num
+			color #000
+			font-size 2.64em
+			line-height 0.8
+			font-weight bold
+			padding 7px 9px 11px	
+		&_day
+			font-size 0.64em
+			line-height 1.3666
+			background linear-gradient(to top, #cc2800 0%, #e36100 100%)
+			color #fff
+			border-radius 5px 5px 0 0
+	&__foto
+		margin-right 20px	
+		float left			
+	&__text
+		color maincl
+		&_clr
+			color #fff
+	&__right
+		flex-basis 300px
+		margin-left 20px 
+		&_title
+			font 1.78em ff			
+			color #fff	
+			letter-spacing -2px			
+			blbox()
+			display block	
+			line-height 1.12	
+	&__list
+		margin-top 19px
+		padding 0 15px 15px		
+	&__items
+		border-bottom 1px dotted #3f4141
+		padding 5px 0
+	&__items:hover
+		opacity op	
+	&__items:before
+		content " "
+		background url("../images/sprite.png") no-repeat left center
+		// width 3px
+		// height 5px 		
+		padding-right 9px
+		margin-left 11px			
+	&__link
+		text-decoration none	
+		color #fff	
+		font-style italic
+	&-meeting
+		blbox()
+		margin-top 17px
+		&__title
+			margin-top 4px
+			letter-spacing -1.6px
+			color #fff
+			font 1.36em/1.47 ff			
+		&__img
+			width 100%	
+			margin-top 15px
+		&__data
+			margin-top 7px
+			font-weight bold
+			color #fff	
+		&__text
+			color maincl
+
+/***footer***/ 
+
+.main-footer
+	background #0f1010
+	
+.footer
+	mainw()
+	flex()
+	align-items flex-end
+	padding 33px 0 40px
+	&__text
+		margin-left 203px
+		color maincl
+		line-height 1.78
+		text-align center
+	&__clr
+		color #cc2800	
+	&__clr:hover
+		opacity op	
+	&__social
+		margin-right 107px
+	&__icon_1
+		icon()
+		background-position -13px 0px
+	&__icon_2
+		icon()
+		background-position -43px 0px		
+	&__icon_3
+		icon()
+		background-position -73px 0px		
+	&__icon_4
+		icon()
+		background-position -103px 0px	
+	&__icon_1:hover
+		opacity op
+	&__icon_2:hover
+		opacity op
+	&__icon_3:hover
+		opacity op
+	&__icon_4:hover
+		opacity op						
+		
+@import "media.styl"

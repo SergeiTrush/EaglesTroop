@@ -1,0 +1,142 @@
+@media only screen and (max-width: 970px) {
+  .header__logo {
+    width: 100%;
+  }
+  .header__small {
+    display: block;
+    margin-right: 25px;
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__item {
+    float: none;
+  }
+  .footer__text {
+    margin-left: 100px;
+  }
+  .footer__social {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .header__img {
+    width: 400px;
+    height: 80px;
+  }
+  .thumb {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .thumb__left {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 0;
+  }
+  .thumb__img {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0 auto;
+  }
+  .thumb__btn {
+    margin-top: 55px;
+  }
+  .content__top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content__img {
+    width: 300px;
+  }
+  .content__box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .content__event {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .content__right {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin: 0;
+  }
+  .footer__text {
+    margin-left: 50px;
+  }
+  .footer__social {
+    margin-right: 50px;
+    margin-left: 66px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__img {
+    width: 330px;
+    height: 65px;
+  }
+  .content__foto {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .footer {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .footer__text {
+    margin: 0;
+  }
+  .footer__social {
+    margin: 20px 0 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header__img {
+    width: 210px;
+    height: 50px;
+  }
+  .header__small {
+    margin-right: 10px;
+  }
+  .header__line {
+    width: 30px;
+  }
+  .thumb {
+    padding: 0 0 30px 0;
+  }
+  .thumb__left {
+    padding: 0 10px;
+  }
+  .content {
+    padding: 30px 0;
+  }
+  .content__boxer {
+    margin-left: 0;
+  }
+  .content__box {
+    margin-left: 0;
+    padding: 0 10px;
+    margin-top: 15px;
+  }
+  .content__data {
+    display: none;
+  }
+  .thumb__btn {
+    margin-top: 20px;
+  }
+}

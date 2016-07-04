@@ -1,0 +1,8 @@
+{
+  "name": "EaglesTroop",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2"
+  }
+}
